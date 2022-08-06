@@ -1,10 +1,8 @@
 /* ----COLOR PALETTE-----
-
 White = #fcfcfc
 Black = #222
 RoyalBlue = #
 DarkBlue = #394363
-
 */
 
 
@@ -28,6 +26,7 @@ nav {
     font-size: 1em;
     top: 0;
     z-index: 300;
+    padding: 0 10%;
     background-color: #fcfcfc70;
     border-radius: 0 0 30px 30px;
     backdrop-filter: blur(15px);
@@ -42,17 +41,8 @@ nav {
     display: flex;
     list-style-type: none;
     margin-top: 10px;
-    margin-left: 5%;
+    margin-left: -40px;
     align-items: center;
-}
-
-@media only screen and (max-width: 900px) {
-    .ul-desktop {
-        display: none;
-    }
-    .menuMobile {
-        display: block;
-    }
 }
 
 a {
@@ -62,7 +52,7 @@ a {
     padding: 10px 10px;
     margin: 25px 30px;
     font-weight: 700;
-    border-radius: 40px;
+    border-radius: 30px;
     transition: all 0.3s;
 }
 li a:hover {
@@ -73,7 +63,7 @@ li a:hover {
     border: none;
     height: 2.5em;
     margin-left: auto;
-    margin-right: 10%;
+    margin-right: 0;
 }
 main {
     color: #222;
@@ -92,32 +82,37 @@ main {
     height: 95vh;
     margin-bottom: 10vh;
     border-radius: 30px;
+    padding: 0 0 0 10%;
     top: 0;
     left: 0;
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     box-shadow: 0 0 25px #283c79eb;
 }
 .titleContainer {
-    width: 45%;
+    width: 40%;
     height: 100vh;
     display: inline-block;
-    padding-left: 7%;
     padding-top: 13%;
     white-space: nowrap;
 }
 .imgContainer {
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 55%;
     height: 100vh;
-    position: relative;
+    background-image: url(media/fondo.svg);
+    background-repeat: no-repeat;
+    background-size: 130% auto;
+    background-position: 70% 50%;
 }
-.imgContainer img {
-    display: block;
-    margin-top: 11%;
-    margin-left: -10px;
-    width: 90%;
-}
+/*.imgContainer img {
+    margin-left: -20%;
+    height: 100%;
+    width: auto;
+}*/
 h1 {
     font-size: 4vw; 
     font-weight: 600; 
@@ -128,17 +123,17 @@ h1 {
     background-color: #f84763;
     margin: -20px 0 40px 10px;
 }
-.seeMore {
+.continueButton {
     background-color: #4045dd;
     font-size: 1em;
     line-height: 2em;
     width: 11em;
     color: white;
     text-align: center;
-    margin-left: 5px;
+    margin-left: 3px;
     transition: all 0.4s;
 }
-.seeMore:hover {
+.continueButton:hover {
     background-color: rgb(75, 80, 214);
     box-shadow: -0px 5px 9px #3a5ec950;
     transform: scale(1.01);
@@ -156,14 +151,22 @@ h1 {
     height: 95vh;
     margin-bottom: 10vh;
     border-radius: 30px;
-    display: flex;
+    padding: 95px 10% 0 10%;
     justify-content: center;
     flex-wrap: wrap;
     box-shadow: 0 0 25px #283c79eb;
 }
 .workSection, .aboutSection {
-    padding: 7%;
     display: block;
+}
+.textContainer {
+    width: 40%;
+}
+.aboutMe {
+    margin-top: 40px;
+    color: #444;
+    text-align: justify;
+    line-height: 1.4em;
 }
 .workSection h2, .aboutSection h2 {
     font-size: 2em;
@@ -239,3 +242,51 @@ h2 span {
     color: #f84763;
 }
 
+@media only screen and (max-width: 900px) {
+    .ul-desktop {
+        display: none;
+    }
+    .menuMobile {
+        display: block;
+        background-color: #fcfcfc70;
+        border-radius: 0 0 30px 30px;
+        backdrop-filter: blur(15px);
+        left: 0;
+    }
+    .menuMobile div {
+        position: absolute;
+        height: 50px;
+        width: 50px;
+        background-color: #222;
+        right: 20px;
+        top: 20px;
+    }
+    .homeSection {
+        flex-direction: column;
+        padding: 5%;
+        height: 97vh;
+    }
+    .titleContainer {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    a, .continueButton {
+        margin: 0;
+        margin-top: auto;
+        margin-bottom: 30px;
+    }
+    .imgContainer {
+        display: none;
+    }
+    .titleContainer div {
+        margin: -10px auto 0 8%;
+    }
+    h1 {
+        margin-top: 90px;
+        font-size: 8.5vw; 
+        font-weight: 600; 
+    }
+}
