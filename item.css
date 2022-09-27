@@ -34,6 +34,14 @@ html {
     transition: all 1s;
 }
 
+.contenido, .agregarCarrito {
+    opacity: 0;
+}
+
+.botonMenu, .contenido, .agregarCarrito {
+    transition: all 0.8s;
+}
+
 button {
     width: 40px;
     height: 40px;
