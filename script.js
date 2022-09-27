@@ -16,6 +16,13 @@ window.onscroll = function() {
   prevScrollpos = currentScrollPos;
 } 
 
+/*
+Esto pregunta si el menu esta abajo, si lo está, entonces entra 
+al "if" y lo sube, tambien rota la flechita y pone el contenido 
+en opacidad 1.
+De lo contrario, lo baja, rota la flecha y pone el contenido
+en opacidad 0.
+*/
 
 function subirMenu()
 {

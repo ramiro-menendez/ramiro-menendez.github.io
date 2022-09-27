@@ -90,7 +90,7 @@ a, a:active{
 
 .nuevaTemp {
     text-align: center;
-    margin-top: 15px;
+    margin-top: 20px;
     margin-bottom: 0;
     font-size: 1em;
 }
@@ -100,15 +100,15 @@ a, a:active{
     display: grid;
     grid-template-columns: 50% 50%;
     padding: 0 20px;
+    margin-bottom: 25px;
 }
 
 .contenedorCategorias {
-    margin-bottom: 70px;
+    margin-bottom: 80px;
 }
 
 .producto {
     font-family: 'Sora', sans-serif;
-    height: 280px;
     margin: 5px;
     color: black;
 }
