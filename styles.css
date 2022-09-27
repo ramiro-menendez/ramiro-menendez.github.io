@@ -9,7 +9,7 @@
 
 html {
     scroll-behavior: smooth;
-    font-family: 'Pacifico', cursive;
+    font-family: 'Sora', sans-serif;
 }
 
 body {
@@ -65,7 +65,7 @@ li {
 }
 
 .titulo {
-    background-color: #EAEAEA;
+    background-color: white;
     width: 100vw;
     height: 70px;
     padding: 0 20px;
@@ -76,6 +76,7 @@ li {
     align-items: center;
     justify-content: center;
     transition: all 0.5s;
+    font-family: 'Pacifico', cursive;
 }
 
 h1 {
@@ -111,4 +112,29 @@ h1 {
     background-position: -10px -150px;
     background-size: 120%;
     background-repeat: no-repeat;
+}
+
+a, a:active{
+    text-decoration: none;
+}
+
+.nuevaTemp {
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 0;
+    font-size: 1em;
+}
+
+.contenedorLoNuevo {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 0 20px;
+}
+
+.producto {
+    font-family: 'Sora', sans-serif;
+    height: 280px;
+    margin: 5px;
+    color: black;
 }
