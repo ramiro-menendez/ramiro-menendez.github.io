@@ -15,3 +15,14 @@ window.onscroll = function() {
   }
   prevScrollpos = currentScrollPos;
 } 
+
+
+function subirMenu()
+{
+    if (document.getElementsByClassName("menuAgregarItem")[0].style.marginTop=="0px") {
+      document.getElementsByClassName("menuAgregarItem")[0].style.marginTop="-300px";
+    }
+    else {
+      document.getElementsByClassName("menuAgregarItem")[0].style.marginTop="0px";
+    }
+}

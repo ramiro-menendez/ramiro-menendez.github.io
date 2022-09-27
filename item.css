@@ -1,0 +1,56 @@
+html {
+    overflow-y: hidden;
+}
+.imagen {
+    width: 100%;
+    height: 95vh;
+    background-color: antiquewhite;
+    margin-bottom: -30px;
+}
+
+.volver {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    color: black;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+}
+
+.menuAgregarItem {
+    width: 100%;
+    height:600px;
+    background-color: white;
+    margin-top: 0;
+    border-radius: 30px 30px 0 0;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 1s;
+}
+
+button {
+    width: 40px;
+    height: 40px;
+    margin-top: 10px;
+    background-color: white;
+    border: none;
+}
+
+.agregarCarrito {
+    width: 70%;
+    max-width: 300px;
+    height: 3em;
+    background-color: black;
+    border-radius: 30px;
+    color: white;
+}
+
+#s, #m, #l, #xl {
+    border: 2px solid black;
+}
