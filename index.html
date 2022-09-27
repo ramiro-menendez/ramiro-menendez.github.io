@@ -1,103 +1,44 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
-<html lang="en">
+<html lang="spa">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#4045dd"/>
-    <title>Ramiro</title>
-    <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7e8d48b41f.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@600;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Sora:wght@500&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <title>Título</title>
 </head>
-<body onload="document.body.style.opacity='1'">
-    <header>
-        <nav>
-            <ul class="ul-desktop">
-                <li class="li-desktop inicio"><a href="#home">Inicio</a></li>
-                <li class="li-desktop acerca"><a href="#about">Acerca de mí</a></li>
-                <li class="li-desktop trabajos"><a href="#work">Trabajos</a></li>
-                <li class="li-desktop contacto"><a href="#contact">Contacto</a></li>
-                <select name="languaje" id="languaje">
-                    <option value="spa">🇦🇷 Esp</option>
-                    <option value="eng">🇺🇸 Eng</option>
-                </select>
-            </ul>
-            <div class="menuMobile">
-                <div></div>
-            </div>
-        </nav>
-    </header>
-    <main>
-        <div id="home">
-            <div class="homeSection">
-                <div class="titleContainer">
-                    <h1>Hola, soy <span class="bold">Ramiro</span>, <br><span class="auto-type"></span></h1>
-                    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-                    <script src="script.js"></script>
-                    <div></div>
-                    <a href="#about" class="continueButton">Conocer más 👇</a>
-                </div>
-                <div class="imgContainer">
-                   <!-- <img src="media/fondo.svg" alt="Ramiro Menendez"> -->
-                </div>
-            </div>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#" class="icono activo"><i class="fa-solid fa-house"></i></a></li>
+            <li><a href="#" class="icono"><i class="fa-solid fa-shirt"></i></a></li>
+            <li><a href="#" class="icono"><i class="fa-solid fa-cart-shopping"></i></a></li>
+            <li><a href="#" class="icono"><i class="fa-solid fa-envelope"></i></a></li>
+        </ul>
+    </nav>
+    <div class="envioGratis"><p>Envío gratis a partir de $.</p></div>
+    <div id="titulo" class="titulo"><h1>Nombre</h1></div>
+    <div class="contenedorLoNuevo">
+        <div class="producto">
+            <p></p>
         </div>
-        <div id="about">
-            <div class="aboutSection">
-                <div class="textContainer">
-                    <h2><span>[ </span>Acerca de mí.<span> ]</span></h2>
-                    <p class="aboutMe">Soy Ramiro Menendez, tengo 23 años y vivo en Santa Fe, Argentina 🇦🇷. Actualmente curso la carrera de Ingeniería en Sistemas de Información en la Universidad Tecnológica de Santa Fe.</p>
-                    <a href="#work" class="continueButton">Ver trabajos 💻</a>
-                </div>
-                <div class="photoOfMe"></div>
-                </div>
-            </div>
+    </div>
+    <div class="contenedorCategorias">
+        <div class="categoria a">
+            <h3>Remeras</h3>
         </div>
-        <div id="work">
-            <div class="workSection">
-                <h2><span>[ </span>Éstos son algunos proyectos en los que trabajé.<span> ]</span></h2>
-                <div class="cardContainer">
-                    <div class="card">
-                        <img src="https://img.freepik.com/vector-gratis/pagina-tienda-linea-tableta_74855-5906.jpg?t=st=1658360374~exp=1658360974~hmac=4f5caa3f8137eba38901012364cf45da9b7279dc654ae27900ac50063ed3c8fa&w=826" alt="Tienda Online" class="img">
-                        <h3>Tienda online</h3>
-                        <div class="separador"></div>
-                        <p>Tienda online de indumentaria incluyendo sistema de cuenta y carrito. Backend en PHP.</p>
-                        <a class="demo button" href="https://www.google.com.ar/" target="_blank">Demostración</a>
-                        <a class="repo button" href="https://www.google.com.ar/" target="_blank">Repositorio</a>
-                    </div>
-                    <div class="card">
-                        <img src="https://media.istockphoto.com/vectors/mobile-game-related-color-line-vector-icon-illustration-vector-id1211440502?k=20&m=1211440502&s=612x612&w=0&h=9oFoQqgs8L5P4Yfa-Lh_-Q7tVVuTaDicNMiFnrRXc7E=" alt="Tienda Online" class="img">
-                        <h3>Videojego Android/iOS</h3>
-                        <div class="separador"></div>
-                        <p>Videojuego 2D en pixel art desarrollado en Unity. Disponible en Google Play y App Store.</p>
-                        <a class="demo button" href="https://www.google.com.ar/" target="_blank">Landing Page</a>
-                        <a class="repo button" href="https://www.google.com.ar/" target="_blank">Descargar</a>
-                    </div>
-                    <div class="card">
-                        <img src="https://media.istockphoto.com/vectors/young-woman-architect-with-braided-hair-creating-vector-id1290434003?k=20&m=1290434003&s=612x612&w=0&h=BajY-cTdH1-uwwUfMbeKFZYyNY6IBFyZErhdAqA1zp8=" alt="Renders Ramiro Menendez" class="img">
-                        <h3>Renderista</h3>
-                        <div class="separador"></div>
-                        <p>Renderizado de arquitectura y diseño de interiores para diversos clientes. Blender.</p>
-                        <a class="demo button" href="https://www.instagram.com/rm.renders/?hl=es" target="_blank">Instagram RM Renders</a>
-                    </div>
-                    <div class="card">
-                        <img src="https://www.approvedcourse.com/wp-content/uploads/2021/07/Drone-Pilot.png" alt="Video Ramiro Menendez" class="img">
-                        <h3>Edición de video</h3>
-                        <div class="separador"></div>
-                        <p>Filmación con drone y edición de video con After Effects y Premiere Pro.</p>
-                        <a class="demo button" href="https://www.youtube.com/channel/UCzt2fO22Fy4WlHMzzu34FJw/featured" target="_blank">Youtube ENALTURA</a>
-                    </div>
-                </div>
-            </div>
+        <div class="categoria b">
+            <h3>Pantalones</h3>
         </div>
-        <div id="contact">
-            <div class="contactSection">
-            </div>
+        <div class="categoria c">
+            <h3>Accesorios</h3>
         </div>
-    </main>
+    </div>
 </body>
 </html>
