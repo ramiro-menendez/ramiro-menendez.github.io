@@ -27,16 +27,16 @@ en opacidad 0.
 function subirMenu()
 {
     if (document.getElementsByClassName("menuAgregarItem")[0].style.marginTop=="0px") {
-      document.getElementsByClassName("menuAgregarItem")[0].style.marginTop="-300px";
+      document.getElementsByClassName("menuAgregarItem")[0].style.marginTop="-400px";
       document.getElementsByClassName("botonMenu")[0].style.transform = "rotate(180deg)";
-      for (i=0; i<=3; i++) {
+      for (i=0; i<=4; i++) {
         document.getElementsByClassName("aparecer")[i].style.opacity = "1";
       }
     }
     else {
       document.getElementsByClassName("menuAgregarItem")[0].style.marginTop="0px";
       document.getElementsByClassName("botonMenu")[0].style.transform = 'rotate(0deg)';
-      for (i=0; i<=3; i++) {
+      for (i=0; i<=4; i++) {
         document.getElementsByClassName("aparecer")[i].style.opacity = "0";
       }
     }
