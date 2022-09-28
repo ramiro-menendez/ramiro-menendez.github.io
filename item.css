@@ -45,6 +45,22 @@ html {
     z-index: 50;
 }
 
+.menuAgregarItem span, .menuAgregarItem select {
+    display: inline;
+}
+
+.menuAgregarItem div {
+    margin: 20px 0 10px 0;
+    display: flex;
+    width: 210px;
+    justify-content: space-between;
+}
+
+select {
+    background-color: white;
+    border: 2px solid black;
+}
+
 .contenido, .agregarCarrito {
     opacity: 0;
 }
@@ -62,7 +78,8 @@ button {
 }
 
 .agregarCarrito {
-    width: 70%;
+    width: 50%;
+    min-width: 210px;
     max-width: 300px;
     height: 3em;
     background-color: black;
