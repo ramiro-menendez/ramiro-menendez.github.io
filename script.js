@@ -42,25 +42,28 @@ function subirMenu() {
 }
 
 function subirBajarCarrito() {
-    if (document.getElementsByClassName("nav")[0].style.marginTop=="calc(-70px + 100vh)") {
-      document.getElementsByClassName("nav")[0].style.marginTop="0";
+    if (document.getElementsByClassName("nav")[0].style.marginBottom=="-430px") {
+      document.getElementsByClassName("nav")[0].style.marginBottom="0px";
       document.getElementsByClassName("carrit")[0].style.color="black";
       document.getElementsByClassName("home")[0].style.color="#c9c2c2";
-      document.getElementsByTagName('html')[0].style.overflow = "hidden";
+      document.getElementsByTagName("html")[0].style.overflow = "hidden";
+      document.getElementsByClassName("pantallaNegra")[0].style.opacity = "1";
     }
     else {
-      document.getElementsByClassName("nav")[0].style.marginTop="calc(-70px + 100vh)";
+      document.getElementsByClassName("nav")[0].style.marginBottom="-430px";
       document.getElementsByClassName("carrit")[0].style.color="#c9c2c2";
       document.getElementsByClassName("home")[0].style.color="black";
       document.getElementsByTagName('html')[0].style.overflow = "scroll";
+      document.getElementsByClassName("pantallaNegra")[0].style.opacity = "0";
     }
 }
 
 function forzarBajarCarrito() {
-    document.getElementsByClassName("nav")[0].style.marginTop="calc(-70px + 100vh)";
-    document.getElementsByClassName("carrit")[0].style.color="#c9c2c2";
-    document.getElementsByClassName("home")[0].style.color="black";
-    document.getElementsByTagName('html')[0].style.overflow = "scroll";
+  document.getElementsByClassName("nav")[0].style.marginBottom="-430px";
+  document.getElementsByClassName("carrit")[0].style.color="#c9c2c2";
+  document.getElementsByClassName("home")[0].style.color="black";
+  document.getElementsByTagName('html')[0].style.overflow = "scroll";
+  document.getElementsByClassName("pantallaNegra")[0].style.opacity = "0";
 }
 
 
