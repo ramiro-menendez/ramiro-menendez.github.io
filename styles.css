@@ -13,17 +13,20 @@ body {
 nav {
     background-color: white;
     width: 100vw;
-    height: 70px;
+    height: 100vh;
     position: fixed;
-    bottom: 0;
+    top: 0;
+    margin-top: calc(100vh - 70px);
     padding: 0 20px;
     border-radius: 30px 30px 0 0;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.08);
+    z-index: 100;
+    transition: all 1s;
 }
 
 nav div {
     width: 100%;
-    height: 100%;
+    height: 70px;
     max-width: 450px;
     margin: auto;
 }
@@ -47,10 +50,11 @@ li {
     display: block;
     font-size: 1.5em;
     text-align: center;
+    transition: all 1s;
 }
 
-.activo {
-    color: #433022;
+.home {
+    color: black;/*#433022;*/
 }
 
 .envioGratis {

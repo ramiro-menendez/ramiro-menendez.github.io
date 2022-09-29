@@ -4,7 +4,6 @@ html {
 .imagen {
     width: 100%;
     height: 90vh;
-    background-color: darkslategray;
     margin-bottom: -30px;
     z-index: 0;
 }
@@ -15,6 +14,7 @@ html {
     top: 0;
     left: 0;
     height: 100%;
+    object-fit: cover;
 }
 
 .volver {

@@ -3,17 +3,17 @@
 Esto sube el titulo 70px si se hace scroll hacia abajo
 Lo restaura a su posicion original si se hace hacia arriba.
 */
-var prevScrollpos = window.pageYOffset;
+var posicionAntes = window.pageYOffset;
 
 window.onscroll = function() {
-  var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
+  var posicionDespues = window.pageYOffset;
+  if (posicionAntes > posicionDespues) {
     document.getElementById("titulo").style.top = "0";
   } 
   else {
     document.getElementById("titulo").style.top = "-70px";
   }
-  prevScrollpos = currentScrollPos;
+  posicionAntes = posicionDespues;
 } 
 
 /*
@@ -24,8 +24,7 @@ De lo contrario, lo baja, rota la flecha y pone el contenido
 en opacidad 0.
 */
 
-function subirMenu()
-{
+function subirMenu() {
     if (document.getElementsByClassName("menuAgregarItem")[0].style.marginTop=="0px") {
       document.getElementsByClassName("menuAgregarItem")[0].style.marginTop="-400px";
       document.getElementsByClassName("botonMenu")[0].style.transform = "rotate(180deg)";
@@ -40,4 +39,23 @@ function subirMenu()
         document.getElementsByClassName("aparecer")[i].style.opacity = "0";
       }
     }
+}
+
+function subirBajarCarrito() {
+    if (document.getElementsByClassName("nav")[0].style.marginTop=="calc(-70px + 100vh)") {
+      document.getElementsByClassName("nav")[0].style.marginTop="0";
+      document.getElementsByClassName("carrit")[0].style.color="black";
+      document.getElementsByClassName("home")[0].style.color="#c9c2c2";
+    }
+    else {
+      document.getElementsByClassName("nav")[0].style.marginTop="calc(-70px + 100vh)";
+      document.getElementsByClassName("carrit")[0].style.color="#c9c2c2";
+      document.getElementsByClassName("home")[0].style.color="black";
+    }
+}
+
+function forzarBajarCarrito() {
+    document.getElementsByClassName("nav")[0].style.marginTop="calc(-70px + 100vh)";
+    document.getElementsByClassName("carrit")[0].style.color="#c9c2c2";
+    document.getElementsByClassName("home")[0].style.color="black";
 }
