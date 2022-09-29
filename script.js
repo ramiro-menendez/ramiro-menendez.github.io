@@ -62,3 +62,10 @@ function forzarBajarCarrito() {
     document.getElementsByClassName("home")[0].style.color="black";
     document.getElementsByTagName('html')[0].style.overflow = "scroll";
 }
+
+
+window.addEventListener("load", () => {
+  setTimeout(() => {
+    window.scrollTo(0, 1);
+  }, 0);
+});
