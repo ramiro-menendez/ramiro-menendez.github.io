@@ -46,11 +46,13 @@ function subirBajarCarrito() {
       document.getElementsByClassName("nav")[0].style.marginTop="0";
       document.getElementsByClassName("carrit")[0].style.color="black";
       document.getElementsByClassName("home")[0].style.color="#c9c2c2";
+      document.getElementsByTagName('html')[0].style.overflow = "hidden";
     }
     else {
       document.getElementsByClassName("nav")[0].style.marginTop="calc(-70px + 100vh)";
       document.getElementsByClassName("carrit")[0].style.color="#c9c2c2";
       document.getElementsByClassName("home")[0].style.color="black";
+      document.getElementsByTagName('html')[0].style.overflow = "scroll";
     }
 }
 
@@ -58,4 +60,5 @@ function forzarBajarCarrito() {
     document.getElementsByClassName("nav")[0].style.marginTop="calc(-70px + 100vh)";
     document.getElementsByClassName("carrit")[0].style.color="#c9c2c2";
     document.getElementsByClassName("home")[0].style.color="black";
+    document.getElementsByTagName('html')[0].style.overflow = "scroll";
 }
