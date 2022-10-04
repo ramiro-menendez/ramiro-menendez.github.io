@@ -162,4 +162,12 @@ a, a:active{
     }
 }
 
+@media screen and (min-width: 580px){
+    .contenedorLoNuevo, .contenedorCategorias {
+        grid-template-columns: 25% 25% 25% 25%;
+    }  
+}
+
+
+
 

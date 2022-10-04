@@ -48,6 +48,7 @@ function subirBajarCarrito() {
       document.getElementsByClassName("home")[0].style.color="#c9c2c2";
       document.getElementsByTagName("html")[0].style.overflow = "hidden";
       document.getElementsByClassName("pantallaNegra")[0].style.opacity = "1";
+      document.getElementsByClassName("pantallaNegra")[0].style.pointerEvents = "auto";
       document.getElementsByClassName("carritoVacio")[0].style.opacity = "1";
     }
     else {
@@ -56,6 +57,7 @@ function subirBajarCarrito() {
       document.getElementsByClassName("home")[0].style.color="black";
       document.getElementsByTagName('html')[0].style.overflow = "scroll";
       document.getElementsByClassName("pantallaNegra")[0].style.opacity = "0";
+      document.getElementsByClassName("pantallaNegra")[0].style.pointerEvents = "none";
       document.getElementsByClassName("carritoVacio")[0].style.opacity = "0";
     }
 }
@@ -66,6 +68,7 @@ function forzarBajarCarrito() {
   document.getElementsByClassName("home")[0].style.color="black";
   document.getElementsByTagName('html')[0].style.overflow = "scroll";
   document.getElementsByClassName("pantallaNegra")[0].style.opacity = "0";
+  document.getElementsByClassName("pantallaNegra")[0].style.pointerEvents = "none";
   document.getElementsByClassName("carritoVacio")[0].style.opacity = "0";
 }
 
