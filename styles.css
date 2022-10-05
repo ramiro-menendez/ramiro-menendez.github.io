@@ -141,7 +141,7 @@ a, a:active{
     width: 100%;
     height: 90px;
     padding: 0 5%;
-    margin-bottom: 35px;
+    margin-bottom: 40px;
 }
 
 .cat ul li a div{
@@ -157,6 +157,7 @@ a, a:active{
     top: 75px;
     left: 15px;
     font-size: 0.8em;
+    color: black;
 }
 
 .nuevaTemp {
@@ -182,6 +183,13 @@ a, a:active{
     font-family: 'Sora', sans-serif;
     margin: 5px;
     color: black;
+}
+
+.descuento {
+    text-decoration: line-through;
+    color: red;
+    font-size: 0.9em;    
+    display: block;
 }
 
 @media screen and (min-width: 1024px){
