@@ -137,6 +137,8 @@ a, a:active{
     margin: auto;
 }
 
+/* ICONOS CATEGORIAS */
+
 .cat {
     width: 100%;
     max-width: 580px;
@@ -153,15 +155,45 @@ a, a:active{
     border-radius: 50%;
 }
 
-.cat ul li a div::after{
-    content: "Cat 1";
+.cat ul li a div i {
+    text-align: center;
+    color: #DADADA;
+    font-size: 2em;
+    line-height: 70px;
+    width: 100%;
+}
+
+.cat ul li a .mujer::after{
+    content: "Mujer";
     position: relative;
-    top: 75px;
+    top: 5px;
     left: 15px;
     font-size: 0.8em;
     color: black;
     z-index: -10;
 }
+
+.cat ul li a .hombre::after{
+    content: "Hombre";
+    position: relative;
+    top: 5px;
+    left: 9px;
+    font-size: 0.8em;
+    color: black;
+    z-index: -10;
+}
+
+.cat ul li a .niños::after{
+    content: "Niños";
+    position: relative;
+    top: 5px;
+    left: 15px;
+    font-size: 0.8em;
+    color: black;
+    z-index: -10;
+}
+
+/* ----- */
 
 .nuevaTemp {
     text-align: center;
