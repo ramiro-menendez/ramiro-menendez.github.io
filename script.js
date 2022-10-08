@@ -79,11 +79,13 @@ function abrirForm() {
     document.getElementsByClassName("contenedorForm")[0].style.opacity="1";
     document.getElementsByClassName("contenedorForm")[0].style.top="-50px";
     document.getElementsByClassName("contenedorForm")[0].style.pointerEvents = "auto";
+    document.getElementsByTagName("html")[0].style.overflow = "hidden";
   }
   else {
     document.getElementsByClassName("contenedorForm")[0].style.opacity="0";
     document.getElementsByClassName("contenedorForm")[0].style.top="0px";
     document.getElementsByClassName("contenedorForm")[0].style.pointerEvents = "none";
+    document.getElementsByTagName('html')[0].style.overflow = "scroll";
   }
 }
 

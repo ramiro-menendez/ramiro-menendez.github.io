@@ -35,20 +35,20 @@
     <div class="pantallaNegra" onclick="forzarBajarCarrito();"></div>
 
     <!-- FORMULARIO DE CONTACTO -->
-
     <div class="contenedorForm" style="opacity: 0; top: 0px; pointer-events: none;">
         <h2>Cómo podemos ayudarte?</h2>
         <form action="">
             <input type="text" placeholder="Nombre">
             <input type="email" name="email" id="email" placeholder="Correo">
+            <label for="asunto">Asunto:</label>
             <select name="asunto" id="asunto" placeholder="Asunto">
                 <option value="envios">Envíos</option>
                 <option value="devolucion">Devoluciones</option>
                 <option value="pagos">Pagos</option>
                 <option value="Otro">Otro</option>
             </select>
-            <input type="text" name="mensaje" id="mensaje" placeholder="Escribí acá tu mensaje">
-            <div onclick="abrirForm();" class="botonVolver"><span>Volver</span></div>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Escribí acá tu mensaje"></textarea>
+            <div onclick="abrirForm();" class="botonVolver"><span>Salir</span></div>
             <button type="submit">Enviar</button>
         </form>
     </div>
@@ -59,7 +59,7 @@
     <!-- TITULO -->
     <div id="titulo" class="titulo"><h1>Nombre</h1></div>
 
-    <!-- PRUEBA CATEGORIAS EN ICONOS -->
+    <!-- CATEGORIAS EN ICONOS -->
     <h2 class="nuevaTemp">Categorias</h2>
     <div class="cat">
         <ul>
