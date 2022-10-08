@@ -72,4 +72,21 @@ function forzarBajarCarrito() {
   document.getElementsByClassName("carritoVacio")[0].style.opacity = "0";
 }
 
+// Abrir y cerar formulario de contacto
+
+function abrirForm() {
+  if (document.getElementsByClassName("contenedorForm")[0].style.top=="0px") {
+    document.getElementsByClassName("contenedorForm")[0].style.opacity="1";
+    document.getElementsByClassName("contenedorForm")[0].style.top="-50px";
+    document.getElementsByClassName("contenedorForm")[0].style.pointerEvents = "auto";
+  }
+  else {
+    document.getElementsByClassName("contenedorForm")[0].style.opacity="0";
+    document.getElementsByClassName("contenedorForm")[0].style.top="0px";
+    document.getElementsByClassName("contenedorForm")[0].style.pointerEvents = "none";
+  }
+}
+
+
+
 

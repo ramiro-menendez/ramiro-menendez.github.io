@@ -23,7 +23,7 @@
                 <li><a onclick="forzarBajarCarrito();" href="#" class="icono home"><i class="fa-solid fa-house"></i></a></li>
                 <li><a href="#" class="icono ropa"><i class="fa-solid fa-shirt"></i></a></li>
                 <li><a onclick="subirBajarCarrito();" href="#" class="icono carrit"><i class="fa-solid fa-cart-shopping"></i></a></li>
-                <li><a href="#" class="icono contacto"><i class="fa-solid fa-envelope"></i></a></li>
+                <li><a onclick="abrirForm();" href="#" class="icono contacto"><i class="fa-solid fa-envelope"></i></a></li>
             </ul>
         </div>
         <div class="carritoVacio">
@@ -33,6 +33,25 @@
         <div class="cerrarCarrito" onclick="forzarBajarCarrito();"><i class="fa-solid fa-xmark"></i></div>
     </nav>
     <div class="pantallaNegra" onclick="forzarBajarCarrito();"></div>
+
+    <!-- FORMULARIO DE CONTACTO -->
+
+    <div class="contenedorForm" style="opacity: 0; top: 0px; pointer-events: none;">
+        <h2>Cómo podemos ayudarte?</h2>
+        <form action="">
+            <input type="text" placeholder="Nombre">
+            <input type="email" name="email" id="email" placeholder="Correo">
+            <select name="asunto" id="asunto" placeholder="Asunto">
+                <option value="envios">Envíos</option>
+                <option value="devolucion">Devoluciones</option>
+                <option value="pagos">Pagos</option>
+                <option value="Otro">Otro</option>
+            </select>
+            <input type="text" name="mensaje" id="mensaje" placeholder="Escribí acá tu mensaje">
+            <div onclick="abrirForm();" class="botonVolver"><span>Volver</span></div>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
 
     <!-- AVISO ARRIBA DE TODO -->
     <div class="envioGratis"><p>Envío gratis a partir de $9000.</p></div>
