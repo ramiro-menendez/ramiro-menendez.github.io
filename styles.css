@@ -114,6 +114,7 @@ li {
 
 .contenedorForm h2 {
     font-size: 2em;
+    margin-bottom: 20pxmkdi;
 }
 
 .contenedorForm input {
@@ -285,7 +286,7 @@ a, a:active {
 
 /* ----- */
 
-.nuevaTemp {
+.tituloSeccion {
     text-align: center;
     margin-top: 20px;
     margin-bottom: 0;
@@ -317,12 +318,29 @@ a, a:active {
     display: block;
 }
 
+/* PIE DE PÁGINA */
+
 footer {
     width: 100%;
     background-color: #111;
     color: #DDD;
     padding: 30px 40px 90px 40px;
     font-size: 1.2em;
+
+}
+
+.contenedorFooter {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.ayuda, .contactos, .redes {
+    margin: 0 10px;
+    width: 230px;
 }
 
 footer h3 {
@@ -340,16 +358,31 @@ footer ul {
     line-height: 1.4em;
 }
 
+/*--------- MEDIA QUERIES ----------*/
+
 @media screen and (min-width: 1024px){
     nav {
         display: none;
     }
+
+    .ayuda, .contactos, .redes {
+        margin: 0 30px;
+    }
+
+    footer {
+        padding: 30px 0px 40px 0px;
+    }
+
 }
 
 @media screen and (min-width: 580px){
     .contenedorLoNuevo, .contenedorCategorias {
         grid-template-columns: 25% 25% 25% 25%;
     }  
+
+    .contenedorFooter {
+        flex-direction: row;
+    }
 }
 
 
