@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="spa">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="theme-color" content="#000" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/7e8d48b41f.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Sora:wght@500&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="../normalize.css">
+    <link rel="stylesheet" href="../styles.css">
+    <script src="../script.js"></script>
+    <title>Nombre</title>
+</head>
+<body>
+
+    <!-- BARRA DE NAVEGACION -->
+    <nav class="nav" style="margin-bottom: -430px;">
+        <div>
+            <ul>
+                <li><a onclick="forzarBajarCarrito();" href="../index.html" class="icono home"><i class="fa-solid fa-house" style="color: #c9c2c2;"></i></a></li>
+                <li><a href="#" class="icono ropa"><i class="fa-solid fa-shirt" style="color: black;"></i></a></li>
+                <li><a onclick="subirBajarCarrito();" href="#" class="icono carrit"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                <li><a onclick="abrirForm();" href="#" class="icono contacto"><i class="fa-solid fa-envelope"></i></a></li>
+            </ul>
+        </div>
+        <div class="carritoVacio">
+            <h3>Tu carrito está vacio</h3>
+            <p>Navega por nuestro catálogo para agregar nuevos productos a tu carrito de compras.</p>
+        </div>
+        <div class="cerrarCarrito" onclick="forzarBajarCarrito();"><i class="fa-solid fa-xmark"></i></div>
+    </nav>
+    <div class="pantallaNegra" onclick="forzarBajarCarrito();"></div>
+
+    <!-- FORMULARIO DE CONTACTO -->
+    <div class="contenedorForm" style="opacity: 0; top: 0px; pointer-events: none;">
+        <h2>Cómo podemos ayudarte?</h2>
+        <form action="">
+            <input type="text" placeholder="Nombre">
+            <input type="email" name="email" id="email" placeholder="Correo">
+            <label for="asunto">Asunto:</label>
+            <select name="asunto" id="asunto" placeholder="Asunto">
+                <option value="envios">Envíos</option>
+                <option value="devolucion">Devoluciones</option>
+                <option value="pagos">Pagos</option>
+                <option value="Otro">Otro</option>
+            </select>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Escribí acá tu mensaje"></textarea>
+            <div onclick="abrirForm();" class="botonVolver"><span>Salir</span></div>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+    <!-- AVISO ARRIBA DE TODO -->
+    <div class="envioGratis"><p>Envío gratis a partir de $9000.</p></div>
+
+    <!-- TITULO -->
+    <div id="titulo" class="titulo"><h1>Nombre</h1></div>
+
+    <!-- CATEGORIAS EN ICONOS -->
+    <h2 class="tituloSeccion">Categorias</h2>
+    <div class="cat">
+        <ul>
+            <li><a href="#"><div class="mujer"><i class="fa-solid fa-person-dress"></i></div></a></li>
+            <li><a href="hombre.html"><div class="hombre"><i class="fa-solid fa-person" style="color: grey;"></i></div></a></li>
+            <li><a href="niños.html"><div class="niños"><i class="fa-solid fa-child" style="color: grey;"></i></div></a></li>
+        </ul>
+    </div>
+
+    <!-- CONTENIDO -->
+    <div class="cuerpo">
+        <h2 class="tituloSeccion">Mujer</h2>
+        <div class="contenedorLoNuevo">
+                <a href="niños/niño-remera.html" class="producto">
+                    <img src="../media/niño-remera.jpg" alt="remera">
+                    <p class="nombreProducto">Producto</p>
+                    <p class="precio">$5780,00</p>
+                </a>
+                <a href="niños/niña-remera.html" class="producto">
+                    <img src="../media/niña-remera.jpg" alt="remera">
+                    <p class="nombreProducto">Producto</p>
+                    <p class="precio">$5780,00</p>
+                </a>
+                <a href="niños/niño-conjuntodeportivo.html" class="producto">
+                    <img src="../media/niño-conjuntodeportivo.jpg" alt="remera">
+                    <p class="nombreProducto">Producto</p>
+                    <p class="precio">$5780,00</p>
+                </a>
+                <a href="niños/niña-conjuntodeportivo.html" class="producto">
+                    <img src="../media/niña-conjuntodeportivo.jpg" alt="remera">
+                    <p class="nombreProducto">Producto</p>
+                    <p class="precio">$5780,00</p>
+                </a>
+        </div>
+    </div>
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+        <div class="contenedorFooter">
+            <div class="ayuda">
+                <h3>AYUDA</h3>
+                <ul>
+                    <li><a class="footerLinks" href="">Preguntas frecuentes</a></li>
+                    <li><a class="footerLinks" href="">Cambios y devoluciones</a></li>
+                    <li><a class="footerLinks" href="">Envíos</a></li>
+                </ul>
+            </div>
+            <div class="contactos">
+                <h3>CONTACTO</h3>
+                <ul>
+                    <p>Atención al cliente:</p>
+                    <li><a class="footerLinks" href="">+54 9 1234-567890</a></li>
+                    <li><a class="footerLinks" href="">contacto@tienda.com</a></li>
+                </ul>
+            </div>
+            <div class="redes">
+                <h3>REDES</h3>
+            </div>
+
+        </div>
+    </footer>
+
+</body>
+</html>
