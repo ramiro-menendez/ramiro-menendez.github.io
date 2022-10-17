@@ -326,7 +326,6 @@ footer {
     color: #DDD;
     padding: 30px 40px 90px 40px;
     font-size: 1.2em;
-
 }
 
 .contenedorFooter {
@@ -356,6 +355,12 @@ footer ul {
     color: #DDD;
     font-size: 0.9em;
     line-height: 1.4em;
+}
+
+.redes li {
+    display: inline;
+    font-size: 1.3em;
+    margin-right: 20px;
 }
 
 /*--------- MEDIA QUERIES ----------*/

@@ -38,8 +38,8 @@
     <div class="contenedorForm" style="opacity: 0; top: 0px; pointer-events: none;">
         <h2>Cómo podemos ayudarte?</h2>
         <form action="">
-            <input type="text" placeholder="Nombre">
-            <input type="email" name="email" id="email" placeholder="Correo">
+            <input type="text" placeholder="Nombre" id="nombre" required>
+            <input type="email" name="email" id="email" placeholder="Correo" required>
             <label for="asunto">Asunto:</label>
             <select name="asunto" id="asunto" placeholder="Asunto">
                 <option value="envios">Envíos</option>
@@ -47,7 +47,7 @@
                 <option value="pagos">Pagos</option>
                 <option value="Otro">Otro</option>
             </select>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Escribí acá tu mensaje"></textarea>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Escribí acá tu mensaje" required></textarea>
             <div onclick="abrirForm();" class="botonVolver"><span>Salir</span></div>
             <button type="submit">Enviar</button>
         </form>
@@ -141,6 +141,11 @@
             </div>
             <div class="redes">
                 <h3>REDES</h3>
+                <ul>
+                    <li><a href="" class="footerLinks"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="" class="footerLinks"><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li><a href="" class="footerLinks"><i class="fa-brands fa-twitter"></i></a></li>
+                </ul>
             </div>
 
         </div>
